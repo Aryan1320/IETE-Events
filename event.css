@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8f9ff;
+  overflow-x: hidden;
+}
+
+/* Blue background circles */
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, #0052cc, #003d99);
+  opacity: 0.8;
+  z-index: -1;
+}
+.circle.big {
+  width: 500px;
+  height: 500px;
+  top: -200px;
+  left: -200px;
+}
+.circle.small {
+  width: 250px;
+  height: 250px;
+  bottom: -100px;
+  right: -100px;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  padding: 80px 20px;
+  color: white;
+  background: linear-gradient(135deg, #0052cc, #007bff);
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+.header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+.header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Content Sections */
+.section {
+  background: white;
+  margin: 40px auto;
+  padding: 30px;
+  max-width: 900px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+.section h2 {
+  text-align: center;
+  color: #0052cc;
+  margin-bottom: 20px;
+}
+
+/* Steps Section */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.step-card {
+  background: #f0f4ff;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: #003d99;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Image Section */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+.image-gallery img {
+  width: 250px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+.image-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #002b80;
+  color: white;
+  margin-top: 50px;
+}
